@@ -1,4 +1,4 @@
-module.export = async function Connection(host, access_token){
+async function Connection(host, access_token){
 
   headers = {'access_token': access_token}
 

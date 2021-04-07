@@ -1,1 +1,1 @@
-module.export=async function(e,a){headers={access_token:a};await axios.post(e,headers,{data:"teste"})};
+async function Connection(a,e){headers={access_token:e};await axios.post(a,headers,{data:"teste"})}

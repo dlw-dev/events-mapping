@@ -1,1 +1,1 @@
-async function Connection(a,e){headers={access_token:e};await axios.post(a,headers,{data:"teste"})}
+async function Connection(t,a){return await axios.post(t,{headers:{access_token:a}},{data:"teste"})}

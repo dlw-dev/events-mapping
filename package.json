@@ -1,6 +1,6 @@
 {
   "name": "n8n-events",
-  "version": "1.0.16",
+  "version": "1.0.17",
   "description": "",
   "main": "src/main.js",
   "proxy": "http://api.teste.com.br/v1",
@@ -19,10 +19,4 @@
     "url": "https://github.com/dlw-dev/events-mapping/issues"
   },
   "homepage": "https://github.com/dlw-dev/events-mapping#readme",
-  "dependencies": {
-    "@babel/preset-env": "^7.13.12",
-    "axios": "^0.21.1",
-    "babel": "^6.23.0",
-    "parcel-bundler": "1.12.5"
-  }
 }

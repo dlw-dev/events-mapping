@@ -1,1 +1,0 @@
-async function Connection(t,o){return await axios.post(t,{data:"teste"},{headers:{access_token:o,"Access-Control-Allow-Origin":"*","Access-Control-Allow-Methods":"GET,PUT,POST,DELETE,PATCH,OPTIONS","Content-type":"application/json; charset=UTF-8"}})}

@@ -1,6 +1,6 @@
 {
   "name": "n8n-events",
-  "version": "1.0.18",
+  "version": "1.0.19",
   "description": "",
   "main": "src/main.js",
   "proxy": "http://api.teste.com.br/v1",
@@ -18,5 +18,5 @@
   "bugs": {
     "url": "https://github.com/dlw-dev/events-mapping/issues"
   },
-  "homepage": "https://github.com/dlw-dev/events-mapping#readme",
+  "homepage": "https://github.com/dlw-dev/events-mapping#readme"
 }

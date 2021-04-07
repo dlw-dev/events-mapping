@@ -1,9 +1,13 @@
-async function initialConnection(host, access_token){
+async function dlweb(){
 
-  const initial = {
-    host : host,
-    access_token : access_token,
+  async function connection(host, access_token){
+
+    const initial = {
+      host: host,
+      access_token: access_token,
+    };
+
+    return initial
   }
- 
-  return initial
+
 }

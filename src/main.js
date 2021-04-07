@@ -1,4 +1,4 @@
-module.exports = async function initialConnection(host, access_token){
+async function initialConnection(host, access_token){
 
   const initial = {
     host : host,

@@ -21,3 +21,8 @@ async function sendEvent(host, access_token){
 
   return connect
 }
+
+export default {
+  connection,
+  sendEvent
+}

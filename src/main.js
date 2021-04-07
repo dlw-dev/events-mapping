@@ -1,6 +1,6 @@
 const axios = require('axios');
 
-async function connection(host, access_token){
+module.export.connection = async function Connection(host, access_token){
 
   const initial = {
     host: host,
@@ -20,9 +20,4 @@ async function sendEvent(host, access_token){
   })
 
   return connect
-}
-
-export default {
-  connection,
-  sendEvent
 }

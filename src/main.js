@@ -9,7 +9,10 @@ async function Connection(host, access_token) {
     body: JSON.stringify({test: 1})
   })
   .then(response => {
-    return response
+    response.json()
+  })
+  .then(data => {
+    return data
   })
 
   return connect;

@@ -4,7 +4,7 @@ async function Connection(host, access_token){
     headers : {
       'access_token': access_token,
       'Access-Control-Allow-Origin' : '*',
-      'Access-Control-Allow-Methods' : 'GET,PUT,POST,DELETE,PATCH,OPTIONS',
+      'Access-Control-Allow-Methods' : 'GET,PUT,POST,DELETE,PATCH,OPTIONS', 
     }
   }, { data : 'teste'});
 

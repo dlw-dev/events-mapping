@@ -1,6 +1,6 @@
 {
   "name": "n8n-events",
-  "version": "1.0.26",
+  "version": "1.0.28",
   "description": "",
   "main": "src/main.js",
   "proxy": "http://api.teste.com.br/v1",

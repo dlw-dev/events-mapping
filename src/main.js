@@ -2,7 +2,7 @@ async function Connection(host, data) {
 
   const connect = await fetch(host, {
     method: 'post',
-    body: data
+    body: JSON.stringify(data)
   })
   .then(response => response.json())
   .then(data => {

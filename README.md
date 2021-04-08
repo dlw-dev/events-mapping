@@ -5,6 +5,15 @@
 Hello and welcome to my first packeage at NPM, I hope you like the solution.
 File containing basic functions for sending events to the N8N in several applications using the webhooks function of the N8N itself.
 
+
+# Install
+
+> npm install n8n-events
+> yarn add n8n-events
+
+# Use CDN
+> <script src="https://cdn.jsdelivr.net/npm/n8n-events/dist/main-min.js"></script>
+
 # Files
 
 > - src/main.js
@@ -30,15 +39,7 @@ You must add this function in your respective events that you want to record, su
 
 Workflow Example
 
-```mermaid
-graph LR
-A[User] --> B(N8N Events)
-B(N8N Events) --> C(WebHooks)
-C(WebHooks) --> D(Mongo DB Register)
-C(WebHooks) --> E(Slack Information)
-C(WebHooks) --> F(Elastic)
-C(WebHooks) --> G(AirTable)
-```
+[![](https://mermaid.ink/img/eyJjb2RlIjoiZ3JhcGggTFJcbkFbVXNlcl0gLS0-IEIoTjhOIEV2ZW50cylcbkIoTjhOIEV2ZW50cykgLS0-IEMoV2ViSG9va3MpXG5DKFdlYkhvb2tzKSAtLT4gRChNb25nbyBEQiBSZWdpc3RlcilcbkMoV2ViSG9va3MpIC0tPiBFKFNsYWNrIEluZm9ybWF0aW9uKVxuQyhXZWJIb29rcykgLS0-IEYoRWxhc3RpYylcbkMoV2ViSG9va3MpIC0tPiBHKEFpclRhYmxlKSIsIm1lcm1haWQiOnsidGhlbWUiOiJkZWZhdWx0In0sInVwZGF0ZUVkaXRvciI6ZmFsc2V9)](https://mermaid-js.github.io/mermaid-live-editor/#/edit/eyJjb2RlIjoiZ3JhcGggTFJcbkFbVXNlcl0gLS0-IEIoTjhOIEV2ZW50cylcbkIoTjhOIEV2ZW50cykgLS0-IEMoV2ViSG9va3MpXG5DKFdlYkhvb2tzKSAtLT4gRChNb25nbyBEQiBSZWdpc3RlcilcbkMoV2ViSG9va3MpIC0tPiBFKFNsYWNrIEluZm9ybWF0aW9uKVxuQyhXZWJIb29rcykgLS0-IEYoRWxhc3RpYylcbkMoV2ViSG9va3MpIC0tPiBHKEFpclRhYmxlKSIsIm1lcm1haWQiOnsidGhlbWUiOiJkZWZhdWx0In0sInVwZGF0ZUVkaXRvciI6ZmFsc2V9)
 
 Infinite Possibilities.
 Help pull request.

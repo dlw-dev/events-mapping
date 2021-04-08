@@ -1,6 +1,5 @@
 var script = document.createElement('script');
-script.type = 'text/javascript';
-script.src = 'https://cdnjs.cloudflare.com/ajax/libs/uuid/8.3.2/uuid.min.js';    
+script.src = 'https://unpkg.com/uuid@latest/dist/umd/uuidv4.min.js';    
 
 document.getElementsByTagName('head')[0].appendChild(script);
 

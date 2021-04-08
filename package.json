@@ -3,11 +3,8 @@
   "version": "1.0.29",
   "description": "",
   "main": "src/main.js",
-  "proxy": "http://api.teste.com.br/v1",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node src/main.js",
-    "build": "parcel build src/main.js dist/main.js"
   },
   "repository": {
     "type": "git",

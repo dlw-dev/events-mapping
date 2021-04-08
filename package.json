@@ -1,6 +1,6 @@
 {
   "name": "n8n-events",
-  "version": "1.0.43",
+  "version": "1.0.44",
   "description": "",
   "main": "src/main.js",
   "scripts": {

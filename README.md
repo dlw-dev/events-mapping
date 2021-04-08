@@ -12,8 +12,9 @@ File containing basic functions for sending events to the N8N in several applica
 > yarn add n8n-events
 
 # Use CDN
-> <script src="https://cdn.jsdelivr.net/npm/n8n-events/dist/main-min.js"></script>
-
+```
+<script src="https://cdn.jsdelivr.net/npm/n8n-events/dist/main-min.js"></script>
+```
 # Files
 
 > - src/main.js

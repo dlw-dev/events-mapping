@@ -4,7 +4,7 @@ async function Connection(host, access_token) {
     method: 'post',
     headers: new Headers({
       'access_token': access_token,
-      'Access-Control-Allow-Origin' : "*"
+      'Access-Control-Allow-Origin' : "*",
     }),
     body: JSON.stringify({test: 1})
   })

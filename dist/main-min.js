@@ -1,1 +1,1 @@
-var script=document.createElement("script");async function Connection(t,e){return await fetch(t,{method:"post",body:JSON.stringify(e)}).then(t=>t.json()).then(t=>t)}script.src="https://unpkg.com/uuid@latest/dist/umd/uuidv4.min.js",document.getElementsByTagName("head")[0].appendChild(script);
+async function Connection(n,t){return await fetch(n,{method:"post",body:JSON.stringify(t)}).then(n=>n.json()).then(n=>n)}function GerateUuid(){var n,t,o="";for(n=0;n<32;n++)t=16*Math.random()|0,8!=n&&12!=n&&16!=n&&20!=n||(o+="-"),o+=(12==n?4:16==n?3&t|8:t).toString(16);return o}

@@ -1,8 +1,3 @@
-var script = document.createElement('script');
-script.src = 'https://unpkg.com/uuid@latest/dist/umd/uuidv4.min.js';    
-
-document.getElementsByTagName('head')[0].appendChild(script);
-
 async function Connection(host, data) {
 
   const connect = await fetch(host, {
@@ -15,4 +10,17 @@ async function Connection(host, data) {
   });
 
   return connect;
+}
+
+function GerateUuid() {
+  var uuid = "", i, random;
+  for (i = 0; i < 32; i++) {
+    random = Math.random() * 16 | 0;
+
+    if (i == 8 || i == 12 || i == 16 || i == 20) {
+      uuid += "-"
+    }
+    uuid += (i == 12 ? 4 : (i == 16 ? (random & 3 | 8) : random)).toString(16);
+  }
+  return uuid;
 }

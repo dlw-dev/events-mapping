@@ -8,8 +8,7 @@ File containing basic functions for sending events to the N8N in several applica
 
 # Install
 
-> npm install n8n-events
-> yarn add n8n-events
+> npm install n8n-events or yarn add n8n-events
 
 # Use CDN
 ```
@@ -29,6 +28,13 @@ File containing basic functions for sending events to the N8N in several applica
 > content you want to send to the webhooks containing the events
 
 #### Function
+
+``` 
+const uuid = GerateUuid() 
+```
+``` 
+response = 1d3d86aa-63ab-42aa-be73-96c53348c506 
+```
 
 ```
  const sendEvent = await Connection(host, data);

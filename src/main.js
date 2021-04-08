@@ -3,7 +3,8 @@ async function Connection(host, data, access_token) {
   const connect = await fetch(host, {
     method: 'post',
     headers: {
-      "access_token": access_token
+      'access_token': access_token,
+      'Content-Type' : 'application/json'
     },
     mode: "cors",
     body: JSON.stringify(data)

@@ -1,1 +1,1 @@
-async function Connection(n,t){return await fetch(n,{method:"post",body:JSON.stringify(t)}).then(n=>n.json()).then(n=>n)}
+var script=document.createElement("script");async function Connection(t,e){return await fetch(t,{method:"post",body:JSON.stringify(e)}).then(t=>t.json()).then(t=>t)}script.type="text/javascript",script.src="https://cdnjs.cloudflare.com/ajax/libs/uuid/8.3.2/uuid.min.js",document.getElementsByTagName("head")[0].appendChild(script);

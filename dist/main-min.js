@@ -1,1 +1,1 @@
-async function Connection(e,n){return await fetch(e,{method:"post",headers:new Headers({access_token:n}),body:JSON.stringify({test:1})}).then(e=>e.json()).then(e=>console.log(e))}
+async function Connection(e,n){return await fetch(e,{method:"post",headers:new Headers({access_token:n,"Access-Control-Allow-Origin":"*"}),body:JSON.stringify({test:1})}).then(e=>e.json()).then(e=>console.log(e))}

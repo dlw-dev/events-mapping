@@ -3,7 +3,8 @@ async function Connection(host, access_token) {
   const connect = await fetch(host, {
     method: 'post',
     headers: new Headers({
-      'access_token': access_token
+      'access_token': access_token,
+      'Access-Control-Allow-Origin' : "*"
     }),
     body: JSON.stringify({test: 1})
   })

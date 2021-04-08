@@ -2,18 +2,18 @@ async function Connection(host, data, access_token) {
 
   const connect = await fetch(host, {
     method: 'post',
-    headers: {
+    headers: new Headers({
+      'Content-Type' : 'application/json',
+      'X-Custom-Header': 'hello world',
       'access_token': access_token,
-      'Content-Type' : 'application/json'
-    },
-    mode: "cors",
+    }),
+    mode: "no-cors",
     body: JSON.stringify(data)
   })
   .then(response => response.json())
   .then(data => {
     return data
   });
-
   return connect;
 }
 

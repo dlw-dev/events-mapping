@@ -2,11 +2,6 @@ async function Connection(host, data, access_token) {
 
   const connect = await fetch(host, {
     method: 'post',
-    headers: new Headers({
-      'Content-Type' : 'application/json',
-      'X-Custom-Header': 'hello world',
-      'access_token': access_token,
-    }),
     mode: "no-cors",
     body: JSON.stringify(data)
   })
@@ -17,7 +12,7 @@ async function Connection(host, data, access_token) {
   return connect;
 }
 
-function GerateUuid() {
+async function GerateUuid() {
   var uuid = "", i, random;
   for (i = 0; i < 32; i++) {
     random = Math.random() * 16 | 0;

@@ -5,7 +5,7 @@ async function Connection(host, data, access_token) {
     mode: "no-cors",
     body: JSON.stringify(data)
   })
-  .then(response => response.json())
+  .then(response => response)
   .then(data => {
     return data
   });

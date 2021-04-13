@@ -3,11 +3,13 @@ async function Connection(host, data, access_token) {
   const connect = await fetch(host, {
     method: 'post',
     mode: "no-cors",
-    body: JSON.stringify(data)
+    body: JSON.stringify(data),
   })
-  .then(response => response)
+  .then(response => {
+    return response;
+  })
   .then(data => {
-    return data
+    return data;
   });
   return {
     status : 200,

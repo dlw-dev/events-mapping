@@ -3,6 +3,10 @@ function Connection(host, data, access_token) {
   fetch(host, {
     method: 'post',
     mode: "no-cors",
+    headers : {
+      "Access-Control-Allow-Origin": "*",
+      "Content-Type": "application/json",
+    },
     body: JSON.stringify(data),
   })
   .then(response => {

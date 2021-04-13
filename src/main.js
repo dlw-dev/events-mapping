@@ -9,7 +9,10 @@ async function Connection(host, data, access_token) {
   .then(data => {
     return data
   });
-  return connect;
+  return {
+    status : 200,
+    message : 'Success connected'
+  };
 }
 
 async function GerateUuid() {
